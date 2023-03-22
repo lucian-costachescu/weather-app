@@ -1,0 +1,56 @@
+:root {
+  --primary: #26c485;
+  --secondary: #fbb44c;
+  --bg-primary: #32908f;
+  --bg-secondary: #dfedf5;
+
+  --btn-color: #2bb686;
+}
+
+.btn-secondary {
+  background-color: var(--btn-color);
+  border-color: var(--btn-color);
+}
+.btn-show,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-light{
+
+}
+
+.bg-primary {
+  background-color: var(--bg-primary) !important;
+}
+
+.bg-dark {
+  background-color: var(--primary) !important;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+main {
+  flex: 1
+}
+
+header {
+  height: 30vh;
+}
+
