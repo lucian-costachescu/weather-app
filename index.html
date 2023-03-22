@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
     />
     <link href="index.css" rel="stylesheet" />
     <title>Weather App</title>
   </head>
   <body>
     <header class="bg-primary d-flex align-items-center justify-content-center">
-      <div class="container ">
+      <div class="container">
         <h1 class="text-center text-primary">Weather App</h1>
       </div>
     </header>
@@ -28,9 +28,16 @@
             imbraci? Iti venim in ajutor! Alege de mai jos orasul tau, apoi
             uita-te prin aplicatie pentru a vedea vremea.
           </p>
-          <p class="text-center">Orasul selectat este <strong class="current-city">Timsioara</strong></p>
+          <p class="text-center">
+            Orasul selectat este <strong class="current-city">Timsioara</strong>
+          </p>
           <div class="dropdown d-flex justify-content-center">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Alege un alt oras
             </button>
             <ul class="dropdown-menu">
@@ -46,10 +53,36 @@
           </div>
         </div>
       </section>
+      <section class="current-weather">
+        <div class="container">
+          <h2 class="text-center">Vremea Curenta</h2>
+          <div class="d-flex justify-content-evenly">
+            <div class="px-3">
+              <div class="fs-2 mb-2">
+                <strong>Timisoara</strong>
+              </div>
+              <div class="fs-3">
+                <strong>Marti</strong>, 19:54
+              </div>
+              <div>
+                <strong>10°C</strong>
+                <img />
+              </div>
+            </div>
+            <div class="px-3">
+              <p class="fs-5">Se simte ca <strong>8°C</strong></p>
+              <p class="fs-5">Putin inorat</p>
+              <p class="fs-5">Viteza vantului: <strong>15 km/h</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-dark">
       <div class="container">
-        <p class="text-light text-center m-0 py-3">Vezi informatii despre vremea din orasul tau</p>
+        <p class="text-light text-center m-0 py-3">
+          Vezi informatii despre vremea din orasul tau
+        </p>
       </div>
     </footer>
     <script
