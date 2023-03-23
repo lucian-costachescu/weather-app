@@ -11,7 +11,8 @@
   background-color: var(--btn-color);
   border-color: var(--btn-color);
 }
-.btn-show,
+
+.btn.show,
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: var(--primary);
@@ -22,12 +23,11 @@
   color: var(--primary) !important;
 }
 
-.text-light{
-
-}
-
 .bg-primary {
   background-color: var(--bg-primary) !important;
+}
+.bg-secondary {
+  background-color: var(--bg-secondary) !important;
 }
 
 .bg-dark {
@@ -35,7 +35,8 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: bold;
 }
 
@@ -47,10 +48,37 @@ body {
 }
 
 main {
-  flex: 1
+  /* flex-grow: 1; */
+  flex: 1;
 }
 
 header {
   height: 30vh;
 }
 
+.scroll-top-top {
+  position: fixed;
+
+  width: 50px;
+  height: 50px;
+
+  visibility: hidden;
+
+  bottom: 40px;
+  right: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-forecast-box p {
+  margin: 0;
+}
+
+/* Stilizari pentru mobile */
+@media (max-width: 576px) {
+  .weather-forecast-box .real-feel {
+    display: none;
+  }
+}
